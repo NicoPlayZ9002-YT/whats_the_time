@@ -1,4 +1,4 @@
-import time,sys
+import time
 
 def give_time(unix=False, time_format=24):
 	curr: float = time.time()
