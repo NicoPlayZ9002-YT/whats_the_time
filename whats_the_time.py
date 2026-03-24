@@ -1,8 +1,8 @@
 import time,sys
 
-def give_time(formatted=True, time_format=24):
+def give_time(unix=False, time_format=24):
 	curr: float = time.time()
-	if formatted:
+	if not unix:
 		curr_time = time.localtime(curr)
 		if time_format == 24:
 			return time.strftime("%H:%M:%S", curr_time)
